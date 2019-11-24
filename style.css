@@ -44,10 +44,19 @@ body{
 
 /* Card */
 .card{
+    display: table-cell;
+    width: 15rem;
+    vertical-align: top;
+    position: relative;
+    box-sizing: content-box;
+    margin: 0.5rem;
+    font-family: 'Roboto', sans-serif;
+}
+/* .card{
     margin: 0.5rem;
     display: flex;
     flex-direction: column;
-}
+} */
 .card-image{
     width: 15rem;
     height: 8.75rem;
@@ -58,4 +67,30 @@ body{
     text-decoration: none;
     max-width: 15rem;
     flex-wrap: wrap;
+    margin: 0;
+}
+/* .Text{
+    display: block;
+    margin: 0px auto;
+    padding-right: 5px;
+} */
+.tooltip{
+    min-width: 5rem;
+    padding: 0.25rem;
+    background-color: #00A99D;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 0.6rem;
+    font-weight: 700;
+    color: #FFFFFF;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: 100;
+    user-select: none;
+}
+.Date{
+    color: #999999;
+    font-size: 11px;
+    margin-top: 0.25rem;
 }
